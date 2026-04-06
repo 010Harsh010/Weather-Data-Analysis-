@@ -1,0 +1,17 @@
+1. Null Filling
+    Null value Missing was less than 1%
+    Date Row Can be remove Only 2 row (0.000258)
+    Station can be filled with the KNN avg Estimation But it already removed by the removal of Date
+    Fill PPT_%d by 0 Medina most comma. Widely use in the dataset almost 70%.
+    Use the Both Direct Interpolation for na fill.
+
+2. Bias Study 
+    UnderEstimate Tmax 
+    More Next_TMax more error (corr=.38) 
+    At low temperatures → sometimes overestimates (corr=0.11)
+    Model is not capturing extreme heat properly
+    
+2. Cloudiness Fetaure Engenniring
+    Add Day mean Cloudiness. Avg Day Cloudiness.
+    Add Day Cloud Varience. To Check the Instable Waether
+    Add Day max/min Cloud. To measure Extreme Conditions.
